@@ -3,9 +3,9 @@ function WordDisplay({word, GuessedLetters}){
     return (
         <div className="WordDisplay">
             {
-                word.split("").map((index,letter) => 
+                word.split("").map((letter) => 
                     GuessedLetters.includes(letter)? 
-                    <span key={index}> {letter} </span> : 
+                    <span> {letter} </span> : 
                     <span> _ </span>)
             }
         </div>
